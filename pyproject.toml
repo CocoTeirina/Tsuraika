@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tsuraika"
+version = "0.1.2"
+authors = [
+    { name = "CocoTeirina", email = "cocoteirina@proton.me" },
+]
+description = "A simple and powerful reverse proxy tool"
+readme = "README.md"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "typer>=0.9.0",
+]
+
+[project.scripts]
+tsuraika = "tsuraika.cli:app"
+
+[project.urls]
+"Homepage" = "https://github.com/cocoteirina/tsuraika"
+"Bug Tracker" = "https://github.com/cocoteirina/tsuraika/issues"
