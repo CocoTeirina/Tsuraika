@@ -1,5 +1,7 @@
 # Tsuraika
 
+[简体中文](https://github.com/cocoteirina/tsuraika/blob/main/docs/README.md) | [English](https://github.com/cocoteirina/tsuraika/blob/main/docs/README_en.md) | [日本語](https://github.com/cocoteirina/tsuraika/blob/main/docs/README_ja.md)
+
 [![Python Version](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/downloads/) [![PyPI](https://img.shields.io/pypi/v/tsuraika)](https://pypi.org/project/tsuraika/) [![License](https://img.shields.io/github/license/cocoteirina/tsuraika)](https://github.com/cocoteirina/tsuraika/blob/main/LICENSE)
 
 Tsuraika 是一个简单但功能强大的反向代理工具，可以帮助你将内部服务安全地暴露到公网。基于 Python 实现，支持服务器-客户端模式运行，适用于开发测试、内网穿透等场景。
@@ -164,7 +166,7 @@ tsuraika client \
 安全地转发本地数据库端口：
 
 ```bash
-frp client \
+tsuraika client \
     --local-addr localhost \
     --local-port 5432 \
     --remote-addr your-server.com \
