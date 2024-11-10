@@ -126,10 +126,10 @@ tsuraika client [options]
 
 ```bash
 # 服务端
-frp server -p 7000
+tsuraika server -p 7000
 
 # 客户端
-frp client \
+tsuraika client \
     --local-addr localhost \
     --local-port 3000 \
     --remote-addr your-server.com \
@@ -143,13 +143,13 @@ frp client \
 
 ```bash
 # 服务端（配置 SSL 证书）
-frp server \
+tsuraika server \
     -p 7000 \
     --ssl-cert /path/to/cert.pem \
     --ssl-key /path/to/key.pem
 
 # 客户端
-frp client \
+tsuraika client \
     --local-addr localhost \
     --local-port 8080 \
     --remote-addr your-server.com \
