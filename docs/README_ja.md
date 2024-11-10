@@ -1,6 +1,6 @@
 # Tsuraika
 
-[简体中文](https://github.com/cocoteirina/tsuraika/blob/main/docs/README.md) | [English](https://github.com/cocoteirina/tsuraika/blob/main/docs/README_en.md) | [日本語](https://github.com/cocoteirina/tsuraika/blob/main/docs/README_ja.md)
+[简体中文](https://github.com/cocoteirina/tsuraika/blob/main/README.md) | [English](https://github.com/cocoteirina/tsuraika/blob/main/docs/README_en.md) | [日本語](https://github.com/cocoteirina/tsuraika/blob/main/docs/README_ja.md)
 
 [![Python バージョン](https://img.shields.io/badge/python-3.7%2B-blue)](https://www.python.org/downloads/) [![PyPI](https://img.shields.io/pypi/v/tsuraika)](https://pypi.org/project/tsuraika/) [![ライセンス](https://img.shields.io/github/license/cocoteirina/tsuraika)](https://github.com/cocoteirina/tsuraika/blob/main/LICENSE)
 
