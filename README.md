@@ -57,19 +57,16 @@ $ poetry install
 启动服务端
 
 ```bash
-$ poetry run tsuraika server -p 7000
+$ poetry run tsuraika server -p 7000 -d
 ```
 
 启动客户端
 
 ```bash
-$ poetry run tsuraika client -c /path/to/config.json
+$ poetry run tsuraika client -c /path/to/config.json -d
 ```
 
 ### 命令行参数 / CLI Arguments
-
-> [!WARNING]
-> 正常情况下请勿启用 `--verbose`, 可能造成严重性能损耗
 
 #### 服务端选项
 
@@ -77,12 +74,10 @@ $ poetry run tsuraika client -c /path/to/config.json
 $ poetry run tsuraika server [options]
 ```
 
-| 选项                    | 说明                      | 默认值 |
-| ----------------------- | ------------------------- | ------ |
-| `--port`, `-p`          | 服务端端口                | `7000` |
-| `--debug`, `-d`         | 调试模式 (更多控制台输出) | 禁用   |
-| `--verbose`, `-v`       | 详细模式 (全部控制台输出) | 禁用   |
-| `--basic-colors`, `-bc` | 使用基础 ANSI 颜色        | 禁用   |
+| 选项            | 说明                      | 默认值 |
+| --------------- | ------------------------- | ------ |
+| `--port`, `-p`  | 服务端端口                | `7000` |
+| `--debug`, `-d` | 调试模式 (详细控制台输出) | 禁用   |
 
 #### 客户端选项
 
@@ -90,18 +85,16 @@ $ poetry run tsuraika server [options]
 $ poetry run tsuraika client [options]
 ```
 
-| 选项                    | 说明                        | 默认值      |
-| ----------------------- | --------------------------- | ----------- |
-| `--config`, `-c`        | 配置文件路径                | 空          |
-| `--server`, `-s`        | 服务端地址                  | `127.0.0.1` |
-| `--server-port`, `-sp`  | 服务端端口                  | `7000`      |
-| `--local`, `-l`         | 本地服务地址                | `127.0.0.1` |
-| `--local-port`, `-lp`   | 本地服务端口                | `8080`      |
-| `--remote-port`, `-rp`  | 服务端暴露端口 (`0 = 随机`) | `0`         |
-| `--name`, `-n`          | 客户端名称                  | 空          |
-| `--debug`, `-d`         | 调试模式 (更多控制台输出)   | 禁用        |
-| `--verbose`, `-v`       | 详细模式 (全部控制台输出)   | 禁用        |
-| `--basic-colors`, `-bc` | 使用基础 ANSI 颜色          | 禁用        |
+| 选项                   | 说明                        | 默认值      |
+| ---------------------- | --------------------------- | ----------- |
+| `--config`, `-c`       | 配置文件路径                | 空          |
+| `--server`, `-s`       | 服务端地址                  | `127.0.0.1` |
+| `--server-port`, `-sp` | 服务端端口                  | `7000`      |
+| `--local`, `-l`        | 本地服务地址                | `127.0.0.1` |
+| `--local-port`, `-lp`  | 本地服务端口                | `8080`      |
+| `--remote-port`, `-rp` | 服务端暴露端口 (`0 = 随机`) | `0`         |
+| `--name`, `-n`         | 客户端名称                  | 空          |
+| `--debug`, `-d`        | 调试模式 (详细控制台输出)   | 禁用        |
 
 ### 更新日志 / Update Logs
 
